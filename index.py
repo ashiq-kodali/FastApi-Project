@@ -11,9 +11,9 @@ class Post(BaseModel):
     
 posts = []
     
-app.get("/test")
-def test():
-  return{"message":"All ser go ahead"}
+@app.get("/test")
+async def test_Db():
+  return {"message":"All ser go ahead"}
     
 
 @app.post("/post")
